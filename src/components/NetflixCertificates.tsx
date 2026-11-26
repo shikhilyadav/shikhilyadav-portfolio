@@ -6,17 +6,17 @@ export const NetflixCertificates: React.FC = () => {
   const { certificates } = PORTFOLIO_DATA;
 
   return (
-    <section id="certificates" className="py-16 sm:py-24 border-t border-[#252525] bg-[#141414]">
+    <section id="certificates" className="py-16 sm:py-20 border-t border-[#1f2723] bg-[#080909]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex items-center space-x-3 mb-8">
-          <div className="w-1 h-6 bg-[#E50914] rounded-full" />
-          <h2 className="font-cinematic text-3xl sm:text-4xl lg:text-5xl tracking-wider text-white uppercase font-bold">
-            CERTIFICATES &amp; CREDENTIALS
+          <div className="w-1 h-6 bg-[#00C982] rounded-full" />
+          <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl tracking-wide text-white font-bold">
+            Certifications &amp; Credentials
           </h2>
-          <span className="text-xs text-[#808080] hidden sm:inline">
-            Verified Credentials
+          <span className="text-xs font-mono text-[#A7ADA9] hidden sm:inline">
+            Verified Internship Documentation
           </span>
         </div>
 
@@ -28,14 +28,14 @@ export const NetflixCertificates: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-[#181818] rounded-xl p-6 sm:p-8 border border-[#2B2B2B] shadow-2xl flex flex-col justify-between space-y-5"
+                className="bg-[#111413] rounded-2xl p-6 sm:p-8 border border-[#1f2723] shadow-2xl flex flex-col justify-between space-y-5"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span
-                      className={`inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider ${
+                      className={`inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded text-[11px] font-mono font-bold uppercase tracking-wider ${
                         isVerified
-                          ? 'bg-emerald-950/60 border border-emerald-700/50 text-emerald-400'
+                          ? 'bg-[#123D2B]/60 border border-[#00C982]/50 text-[#78FFB4]'
                           : 'bg-amber-950/60 border border-amber-700/50 text-amber-400'
                       }`}
                     >
@@ -47,32 +47,32 @@ export const NetflixCertificates: React.FC = () => {
                       <span>{cert.status}</span>
                     </span>
 
-                    <span className="text-xs font-mono text-[#8C8C8C]">
+                    <span className="text-xs font-mono text-[#A7ADA9]">
                       {cert.datePlaceholder}
                     </span>
                   </div>
 
-                  <h3 className="font-cinematic text-2xl text-white tracking-wider">
+                  <h3 className="font-editorial text-2xl text-white font-bold">
                     {cert.title}
                   </h3>
-                  <div className="text-xs text-[#E50914] font-semibold">
+                  <div className="text-xs font-mono text-[#00C982] font-semibold">
                     Issuer: {cert.issuer}
                   </div>
 
-                  <p className="text-xs text-[#B3B3B3] leading-relaxed">
+                  <p className="text-xs text-[#A7ADA9] leading-relaxed">
                     {cert.description}
                   </p>
                 </div>
 
                 {/* Verification Placeholders */}
-                <div className="pt-4 border-t border-[#282828] space-y-2 text-xs">
-                  <div className="flex justify-between items-center text-[#8C8C8C]">
+                <div className="pt-4 border-t border-[#1f2723] space-y-2 text-xs font-mono">
+                  <div className="flex justify-between items-center text-[#A7ADA9]">
                     <span>Credential ID:</span>
-                    <span className="font-mono text-amber-400">{cert.credentialIdPlaceholder}</span>
+                    <span className="text-amber-400">{cert.credentialIdPlaceholder}</span>
                   </div>
-                  <div className="flex justify-between items-center text-[#8C8C8C]">
+                  <div className="flex justify-between items-center text-[#A7ADA9]">
                     <span>Verification Document:</span>
-                    <span className="font-mono text-amber-400">{cert.linkPlaceholder}</span>
+                    <span className="text-amber-400">{cert.linkPlaceholder}</span>
                   </div>
                 </div>
 

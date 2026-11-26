@@ -7,6 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
+        story: {
+          bg: '#080909',
+          secondary: '#111413',
+          card: '#141816',
+          cardHover: '#1a201d',
+          forest: '#123D2B',
+          emerald: '#00C982',
+          highlight: '#78FFB4',
+          text: '#F5F5F2',
+          muted: '#A7ADA9',
+          border: '#1f2723',
+          glow: 'rgba(0, 201, 130, 0.15)',
+        },
         netflix: {
           black: '#141414',
           dark: '#181818',
@@ -38,6 +51,7 @@ export default {
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
         cinematic: ['Bebas Neue', 'sans-serif'],
+        editorial: ['Cinzel', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
     },

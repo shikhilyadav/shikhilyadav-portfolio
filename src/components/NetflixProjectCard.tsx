@@ -36,7 +36,7 @@ export const NetflixProjectCard: React.FC<ProjectCardProps> = ({
 
       {/* Top Left Badge */}
       <div className="absolute top-2 left-2 z-20">
-        <span className="px-2 py-0.5 rounded-sm bg-[#E50914] text-white text-[9px] font-bold tracking-wider uppercase shadow">
+        <span className="px-2 py-0.5 rounded-sm bg-[#123D2B]/90 text-[#78FFB4] border border-[#00C982]/40 text-[9px] font-bold tracking-wider uppercase shadow">
           {project.cardBadge}
         </span>
       </div>

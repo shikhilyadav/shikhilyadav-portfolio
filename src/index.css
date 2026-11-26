@@ -11,8 +11,8 @@
   html, body, #root {
     cursor: default;
     caret-color: transparent !important;
-    background-color: #141414;
-    color: #FFFFFF;
+    background-color: #080909;
+    color: #F5F5F2;
     overflow-x: hidden;
   }
 

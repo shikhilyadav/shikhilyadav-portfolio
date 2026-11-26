@@ -56,7 +56,7 @@ export const NetflixProjectModal: React.FC<ModalProps> = ({ project, onClose }) 
 
           {/* Title on Banner */}
           <div className="absolute bottom-6 left-6 right-6 space-y-2">
-            <div className="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded bg-[#E50914] text-white text-[10px] font-bold tracking-wider uppercase">
+            <div className="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded bg-[#123D2B] border border-[#00C982]/40 text-[#78FFB4] text-[10px] font-bold tracking-wider uppercase">
               <span>{project.cardBadge}</span>
               <span>•</span>
               <span>{project.category}</span>

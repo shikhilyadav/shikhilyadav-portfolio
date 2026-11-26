@@ -60,11 +60,154 @@ export interface CertificateItem {
   description: string;
 }
 
+export interface StoryChapterMeta {
+  id: string;
+  number: string;
+  title: string;
+  shortLabel: string;
+  heading: string;
+}
+
 export const PORTFOLIO_DATA = {
   brand: {
-    name: 'SHIKHIL FLIX',
-    tagline: 'Explore my work. Discover my world.',
+    name: 'SHIKHIL',
+    subtitle: 'THE STORY SO FAR',
+    tagline: 'Every project has a story. Every challenge creates a lesson.',
     producer: 'Shikhil Yadav',
+  },
+
+  story: {
+    title: 'SHIKHIL',
+    subtitle: 'THE STORY SO FAR',
+    tagline: 'Every project has a story. Every challenge creates a lesson.',
+    opening: {
+      heading: 'SHIKHIL YADAV',
+      subtitle: 'THE STORY SO FAR',
+      supportingText:
+        'MCA student exploring Artificial Intelligence, Machine Learning, Data Science and Software Development.',
+      cta: 'START MY JOURNEY',
+    },
+    chapters: [
+      { id: 'chapter-00', number: '00', title: 'THE OPENING', shortLabel: 'The Opening', heading: 'SHIKHIL YADAV' },
+      { id: 'chapter-01', number: '01', title: 'THE BEGINNING', shortLabel: 'The Beginning', heading: 'It started in college.' },
+      { id: 'chapter-02', number: '02', title: 'CURIOSITY & EXPLORATION', shortLabel: 'Curiosity & Exploration', heading: 'One interest led to another.' },
+      { id: 'chapter-03', number: '03', title: 'THE CHALLENGE', shortLabel: 'The Challenge', heading: 'Getting a model to work is only the beginning.' },
+      { id: 'chapter-04', number: '04', title: 'THE CREATIONS', shortLabel: 'The Creations', heading: 'Interactive Case Studies' },
+      { id: 'chapter-05', number: '05', title: 'THE PRESENT', shortLabel: 'The Present', heading: 'Postgraduate Research & Experience' },
+      { id: 'chapter-06', number: '06', title: 'THE NEXT CHAPTER', shortLabel: 'The Next Chapter', heading: 'The story is still being written.' },
+    ] as StoryChapterMeta[],
+    beginning: {
+      chapterTag: 'CHAPTER 01 — THE BEGINNING',
+      heading: 'It started in college.',
+      narrative: [
+        'Like many journeys in computing, it didn’t begin with complex neural networks or massive cloud pipelines. It started with simple logic, foundational syntax, and the undeniable thrill of compiling a program that worked.',
+        'During my college years, early coursework in algorithms and data structures opened an important door. While software development offered the power to build functional tools, data science presented something even more compelling: the ability to ask questions of raw information and reveal patterns hidden beneath the surface.',
+        'That curiosity grew into a dedicated academic path — leading directly to my pursuit of a Master of Computer Applications (MCA), focusing deeply on algorithmic rigor, statistical reasoning, and machine intelligence.'
+      ],
+      milestones: [
+        {
+          phase: 'PHASE 01',
+          title: 'Foundations in Logic',
+          description: 'Exploring core programming principles, data structures, and algorithmic problem-solving.',
+        },
+        {
+          phase: 'PHASE 02',
+          title: 'The Data Awakening',
+          description: 'Discovering that raw datasets contain narratives, trends, and predictive power when handled with statistical integrity.',
+        },
+        {
+          phase: 'PHASE 03',
+          title: 'Advanced MCA Pursuit',
+          description: 'Committing to postgraduate research and applied engineering in Artificial Intelligence and Machine Learning.',
+        },
+      ]
+    },
+    curiosity: {
+      chapterTag: 'CHAPTER 02 — CURIOSITY & EXPLORATION',
+      heading: 'One interest led to another.',
+      narrative:
+        'My curiosity about technology expanded into different areas. I began exploring Artificial Intelligence, Machine Learning, Data Science and Software Development, experimenting with different tools and approaches.',
+      domains: [
+        {
+          id: 'ai',
+          title: 'Artificial Intelligence',
+          tag: 'CORE DISCIPLINE',
+          summary: 'Studying intelligent reasoning systems, probabilistic decision trees, and foundational concepts behind cognitive automation.',
+          skills: ['Heuristic Search', 'Decision Trees', 'Pattern Recognition', 'Expert Systems'],
+          icon: 'BrainCircuit',
+        },
+        {
+          id: 'ml',
+          title: 'Machine Learning',
+          tag: 'PREDICTIVE SYSTEMS',
+          summary: 'Designing end-to-end learning workflows: supervised classification, multivariate regression, and structured validation methods.',
+          skills: ['Scikit-learn', 'Supervised Learning', 'Feature Scaling', 'Cross-Validation'],
+          icon: 'Cpu',
+        },
+        {
+          id: 'ds',
+          title: 'Data Science',
+          tag: 'ANALYTICS & EDA',
+          summary: 'Transforming unstructured and tabular data into actionable statistical conclusions, distribution plots, and regional heatmaps.',
+          skills: ['Pandas & NumPy', 'EDA & Wrangling', 'Matplotlib & Seaborn', 'Statistical Testing'],
+          icon: 'Database',
+        },
+        {
+          id: 'dev',
+          title: 'Software Development',
+          tag: 'ENGINEERING & CODE',
+          summary: 'Writing clean, maintainable, and responsive web applications with TypeScript, React, and modular architecture.',
+          skills: ['Python', 'TypeScript & React', 'Tailwind CSS', 'Vite & Git'],
+          icon: 'Code2',
+        },
+        {
+          id: 'sec',
+          title: 'Cybersecurity',
+          tag: 'INTEGRITY & DEFENSE',
+          summary: 'Understanding threat landscapes, defensive engineering, malicious communication patterns, and safe data handling practices.',
+          skills: ['SMS Spam Defense', 'Input Sanitization', 'Data Privacy', 'Security Hygiene'],
+          icon: 'ShieldCheck',
+        },
+      ],
+    },
+    challenge: {
+      chapterTag: 'CHAPTER 03 — THE CHALLENGE',
+      heading: 'Getting a model to work is only the beginning.',
+      narrative:
+        'Working with machine learning models taught me that producing a prediction is not the same as producing a reliable result. Understanding unexpected outputs, investigating model behaviour and evaluating results became important parts of my learning process.',
+      pipelineSteps: [
+        { label: 'DATA', desc: 'Ingestion, sanitization, & statistical inspection' },
+        { label: 'MODEL', desc: 'Architecture choice, fitting, & parameter tuning' },
+        { label: 'PREDICTION', desc: 'Inference generation & residual calculation' },
+        { label: 'EVALUATION', desc: 'Metrics validation, error analysis, & boundary testing' },
+      ],
+      stages: [
+        {
+          number: '01',
+          title: 'Build',
+          subtitle: 'Pipeline & Data Preparation',
+          description:
+            'Carefully preparing datasets, separating train and test distributions, scaling numerical features, and encoding categorical variables before fitting any estimator.',
+          focusAreas: ['Data Preprocessing', 'Train/Test Separation', 'Baseline Estimators', 'Feature Standardization'],
+        },
+        {
+          number: '02',
+          title: 'Investigate',
+          subtitle: 'Probing Model Behavior',
+          description:
+            'Inspecting misclassifications, unexpected predictions, and residual skewness rather than simply relying on aggregate accuracy scores.',
+          focusAreas: ['Confusion Matrix Inspection', 'Residual Plot Analysis', 'False Positive Audits', 'Edge-Case Debugging'],
+        },
+        {
+          number: '03',
+          title: 'Improve',
+          subtitle: 'Refinement & Validation',
+          description:
+            'Iterating on feature representations, comparing alternative estimators (e.g. TF-IDF vs. transformer embeddings), and documenting honest evaluation benchmarks.',
+          focusAreas: ['Hyperparameter Tuning', 'Architectural Comparison', 'Cross-Validation Logging', 'Reproducible Notebooks'],
+        },
+      ],
+    },
   },
 
   profile: {
@@ -117,9 +260,9 @@ export const PORTFOLIO_DATA = {
       demoUrl: '[Add Live Demo / Notebook Link]',
       datasetInfo: 'Iris Dataset (Fisher, 1936) — 150 instances, 4 numeric features, 3 target classes.',
       status: 'Completed',
-      cardBadge: 'TOP 10 IN ML',
-      rating: 'ALL AGES',
-      matchScore: '98% Match',
+      cardBadge: 'SUPERVISED CLASSIFICATION',
+      rating: 'Scikit-learn',
+      matchScore: 'Fisher Dataset',
       releaseYear: '2024',
       durationLabel: 'Classification Pipeline',
       themeGradient: 'from-emerald-950 via-teal-900 to-[#141414]',
@@ -152,9 +295,9 @@ export const PORTFOLIO_DATA = {
       demoUrl: '[Add Live Dashboard / Notebook Link]',
       datasetInfo: 'State-wise Employment Statistics Dataset (COVID-19 & Historical Period).',
       status: 'Completed',
-      cardBadge: 'DATA DOCUSERIES',
-      rating: 'CRITICAL ACCLAIM',
-      matchScore: '96% Match',
+      cardBadge: 'SOCIOECONOMIC ANALYSIS',
+      rating: 'Pandas & Seaborn',
+      matchScore: 'Regional EDA',
       releaseYear: '2024',
       durationLabel: 'Exploratory Study',
       themeGradient: 'from-amber-950 via-orange-950 to-[#141414]',
@@ -187,9 +330,9 @@ export const PORTFOLIO_DATA = {
       demoUrl: '[Add Live Prediction App / Notebook Link]',
       datasetInfo: 'Automobile Resale Market Dataset including vehicle specifications and sale prices.',
       status: 'Completed',
-      cardBadge: 'TRENDING #1 IN REGRESSION',
-      rating: 'PREDICTIVE',
-      matchScore: '95% Match',
+      cardBadge: 'MULTIVARIATE REGRESSION',
+      rating: 'Regression Pipeline',
+      matchScore: 'Valuation Engine',
       releaseYear: '2024',
       durationLabel: 'Valuation Engine',
       themeGradient: 'from-cyan-950 via-blue-950 to-[#141414]',
@@ -222,9 +365,9 @@ export const PORTFOLIO_DATA = {
       demoUrl: '[Add Live Demo / HuggingFace Link]',
       datasetInfo: 'SMS Spam Collection Dataset (labeled Ham vs. Spam text entries).',
       status: 'Completed',
-      cardBadge: 'ORIGINAL TRANSFORMER SERIES',
-      rating: 'AI-MA',
-      matchScore: '99% Match',
+      cardBadge: 'COMPARATIVE NLP',
+      rating: 'BERT vs TF-IDF',
+      matchScore: 'Text Classification',
       releaseYear: '2024',
       durationLabel: 'NLP Architecture',
       themeGradient: 'from-rose-950 via-red-950 to-[#141414]',
